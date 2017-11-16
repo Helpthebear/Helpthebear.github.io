@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 	<head>
 		<meta charset="utf-8">
 		<meta name="author" content="Kevin Coleman">
@@ -11,57 +12,95 @@
 		<link rel="stylesheet" href="css/main.css">
 	</head>
 	
-
-
 	<body>
+
+		<div class="row">
 
 
 		
-		<header class="header">
+			<header class="header-bg">
 
+				<nav class="main-nav">
 
+			    	<ul class="main-nav__list  container">
 
-				<nav class="nav--main  nav__style">
-					
-					<div class="nav-container">
+			    		<li class="main-nav__brand">Kevin Coleman</li>
 
-				    	<ul class="nav__list">
+			    		<li class="main-nav__li"><a href="index.html#skills-section">skills</a></li>
 
-				    		<li class="nav__brand">
-								Kevin Coleman
-				    		</li>
+			    		<li class="main-nav__li"><a href="index.html#contact-section">contact</a></li>
 
-				    		<li class="nav__item">
-				       			<a class="nav__link" href="index.html#skill-section">Skills</a>
-				      		</li>
-
-				      		<li class="nav__item">
-				        		<a class="nav__link" href="index.html#contact">Contact</a>
-				     		</li>
-
-				    	</ul>
-
-					</div> <!-- CONTAINER -->	
+			    	</ul>
 
 				</nav>
 
 
 
-				<section>
+				<div class="jtron">
 
-					<div class="jtron__style">
+					<h1 class="jtron__header  text-style"><span class="jtron__header-style">Front-End Developer</span></h1>
 
-						<div class="jtron  container">
+					<p class="jtron__p"> My name is Kevin Coleman and I'm a Maryland-based coder. I like to build websites and learn new technologies that allow me to enhance both past and future projects.</p>
+					
+					<q>&quot;Rinse, repeat.&quot; - <cite>Some bottle of shampoo</cite></q> 
 
-							<h1 class="jtron__header  text-style">Front-End Developer</h1>
+				</div>
 
-							<p class="jtron__p"> My name is Kevin Coleman and I'm a Maryland-based coder. I like to build websites and learn new technologies that allow me to enhance both past and future projects.</p>
+			</header>
+			
 
-							<blockquote>
 
-								<p class="quote-style">&quot;Rinse, repeat.&quot; <i class="text-style"> - Some bottle of shampoo</i></p>
-								
-							</blockquote>
+			<main>
+
+				<section class="skills">
+															
+					<div class="container">  
+
+						<div class="skills__head">
+
+							<h2  id="skills-section" class="skills__header">Abilities</h2>
+
+							<p>At the core of my skills lies a strong foundation in the heart of Front-End Development: HTML, CSS, &amp; JavaScript. Understanding the importance of keeping project files clear and easily maintainable, I strive to write code that is modular and reusable.</p>
+
+						</div>
+
+
+						<h3 class="skills__header">My Arsenal</h3>
+
+						<div class="skills-card">
+									
+							<ul class="skills__list">
+
+								<li class="skills__li">
+									<figure><img class="svg--skills" src="imgs/html5.svg">
+									<figcaption>HTML5</figcaption>
+								</figure></li>
+
+								<li class="skills__li"><figure><img class="svg--skills" src="imgs/javascript.svg">
+									<figcaption>JavaScript</figcaption>
+								</figure></li>
+
+								<li class="skills__li"><figure><img class="svg--skills" src="imgs/css3.svg">
+									<figcaption>CSS3</figcaption>
+								</figure></li>
+
+								<li class="skills__li"><figure><img class="svg--skills" src="imgs/bootstrap.svg">
+									<figcaption>Bootstrap</figcaption>
+								</figure></li>
+
+								<li class="skills__li"><figure><img class="svg--skills" src="imgs/jquery.svg">
+									<figcaption>jQuery</figcaption>
+								</figure></li>
+
+								<li class="skills__li"><figure><img class="svg--skills" src="imgs/sass.svg">
+									<figcaption>Sass</figcaption>
+								</figure></li>
+
+								<li class="skills__li"><figure><img class="svg--skills" src="imgs/git.svg">
+									<figcaption>Git</figcaption>
+								</figure></li>
+
+							</ul>
 
 						</div>
 
@@ -69,109 +108,51 @@
 
 				</section>
 
-
-
-		</header>
+			</main>
 
 
 
-		<main class="main-content">
-1
+			<aside id="contact-section">
+																	
+				<div class="container  contact">
 
+						<div class="contact__head">
+																			
+							<h3 class="contact__header">Contact</h3>
 
-			<section class="skills">
-				
-
-
-					<section class="skills__header">
-
-						<div class="container">
-
-							<h2  id="skill-section">Abilities</h2>
-
-							<p>At the core of my skills lies a strong foundation in the heart of Front-End Development: HTML, CSS, &amp; JavaScript. </p>
+							<p>Feel free to reach out or take a look at whatever im working on around the web.</p>
 
 						</div>
 
-					</section>
+						<ul class="contact__list">
+
+							<li><img class="svg--contact" src="imgs/gmail.svg">Email: kefinbc@gmail.com</li>
+
+							<li><a href="https://www.github.com/Helpthebear" target="_blank"><img class="svg--contact" src="imgs/github.svg">Github</a></li>
+
+							<li><a href="http://www.codepen.io/kefinbc/" target="_blank"><img class="svg--contact" src="imgs/codepen.svg">CodePen</a></li>
+
+							<li><a href="http://www.linkedin.com/in/kevin-bc" target="_blank"><img class="svg--contact" src="imgs/linkedin.svg">LinkedIn</a></li>
+
+						</ul>
+
+				</div>
+
+			</aside>
 
 
 
-				<section>
-							
-							<div class="container">
+			<footer class="main-footer">
 
-								<h3 class="text-style--skills">Technologies i work with:</h3>
-								
-								<ul class="skills__ul">
+				<div class="container">
 
-									<li><figure><img class="svg--skills" src="imgs/html5.svg">
-										<figcaption>HTML5</figcaption>
-									</figure></li>
+					<span>&copy; 2017 Kevin Coleman.</span>
 
-									<li><figure><img class="svg--skills" src="imgs/javascript.svg">
-										<figcaption>JavaScript</figcaption>
-									</figure></li>
+				</div>
 
-									<li><figure><img class="svg--skills" src="imgs/css3.svg">
-										<figcaption>CSS3</figcaption>
-									</figure></li>
+			</footer>
 
-									<li><figure><img class="svg--skills" src="imgs/bootstrap.svg">
-										<figcaption>Bootstrap</figcaption>
-									</figure></li>
-
-									<li><figure><img class="svg--skills" src="imgs/jquery.svg">
-										<figcaption>jQuery</figcaption>
-									</figure></li>
-
-									<li><figure><img class="svg--skills" src="imgs/sass.svg">
-										<figcaption>Sass</figcaption>
-									</figure></li>
-
-									<li><figure><img class="svg--skills" src="imgs/git.svg">
-										<figcaption>Git</figcaption>
-									</figure></li>
-
-								</ul>
-
-							</div>
-
-				</section>
-
-
-
-			</section>
-
-
-
-		</main>
-
-
-
-		<aside id="contact" class="container  contact-section">
-
-			<h3>Contact</h3>
-
-			<p>Feel free to reach out or take a look at whatever im working on around the web.</p>
-
-			<ul>
-				<li><img class="svg--contact" src="imgs/gmail.svg">Email: kefinbc@gmail.com</li>
-				<li><a href="https://www.github.com/Helpthebear" target="_blank"><img class="svg--contact" src="imgs/github.svg">Github</a></li>
-				<li><a href="http://www.codepen.io/kefinbc/" target="_blank"><img class="svg--contact" src="imgs/codepen.svg">CodePen</a></li>
-				<li><a href="http://www.linkedin.com/in/kevin-bc" target="_blank"><img class="svg--contact" src="imgs/linkedin.svg">LinkedIn</a></li>
-			</ul>
-
-		</aside>
-
-											<!-- FOOTER -->
-
-		<footer class="main-footer">
-
-			<span>&copy; 2017 Kevin Coleman.</span>
-
-		</footer>
-
+		</div>
 
 	</body>
 
