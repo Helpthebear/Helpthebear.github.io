@@ -166,6 +166,7 @@ Skills
 .skills__cards {
 	width: 100px;
 	height: 100px;
+	margin: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -296,7 +297,7 @@ Skills
 .skills__cards {
 	background-image: radial-gradient(at bottom left, #4FA57E, #5081A5);
 	border-radius: 50%; 
-	box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.4);
+	box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.8);
 }
 
 .skills__header {
