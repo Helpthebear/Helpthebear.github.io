@@ -296,7 +296,7 @@ Skills
 .skills__cards {
 	background-image: radial-gradient(at bottom left, #4FA57E, #5081A5);
 	border-radius: 50%; 
-	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
+	box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.4);
 }
 
 .skills__header {
