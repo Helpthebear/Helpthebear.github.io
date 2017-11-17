@@ -164,9 +164,9 @@ Skills
 }
 
 .skills__cards {
-	padding: 9px;
-	width: 70px;
-	height: 70px;
+	padding: 15px;
+	width: 80px;
+	height: 80px;
 }
 
 @media screen and (min-width: 768px) {
