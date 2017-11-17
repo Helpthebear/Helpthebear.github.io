@@ -170,6 +170,10 @@ Skills
 	height: 80px;
 }
 
+figcaption {
+	margin: 24px;
+}
+
 @media screen and (min-width: 768px) {
 	.skills__header,
 	.skills__head p {
