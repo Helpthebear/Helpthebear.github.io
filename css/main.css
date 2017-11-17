@@ -148,6 +148,10 @@ Jtron
 Skills
 ********************/
 
+.skills-section {
+	margin: 24px 0;
+}
+
 .skills__list {
 	flex-flow: row wrap;
 	justify-content: space-around;
@@ -173,6 +177,10 @@ Skills
 /********************
 Contact
 ********************/
+
+.contact-section {
+	margin: 24px 0;
+}
 
 .contact {
 	width: 50%;
