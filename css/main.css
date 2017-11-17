@@ -60,6 +60,11 @@ Layout
 	margin: 0 auto;
 }
 
+.h-container {
+	padding: 20px;
+	margin: 0 auto;	
+}
+
 .main-nav__list,
 .jtron,
 .skills__list,
@@ -104,6 +109,7 @@ Nav
 
 .main-nav__list li:nth-of-type(2) {
 	margin-right: 24px;
+	margin-left: 24px;
 }
 
 .main-nav__brand {
@@ -135,11 +141,26 @@ Jtron
 	justify-content: center;
 }
 
+.jtron__header {
+	padding-bottom: 24px;
+}
 
 
 @media screen and (min-width: 768px) {
 	.jtron {
 		text-align: center; 
+	}
+
+	.jtron__header {
+		font-size: 2.5em;
+	}
+
+	.header-bg {
+		padding: 60px;
+	}
+
+	.header-card {
+		width: 95%;
 	}
 }
 
@@ -242,25 +263,36 @@ Header
 	background-image: radial-gradient(at bottom left, #4FA57E, #5081A5);
 }
 
+@media screen and (min-width: 768px) {
+	.header-card {
+		width: 95%;
+		background: rgba(0, 0, 0, 0.1);
+		box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+	}
+}
+
 /***** Nav *****/
 
 .main-nav {
-	color: #ccc;
+	color: #1f3756;
 }
 
 .main-nav__li {
-	border-bottom: 1px solid rgba(31, 55, 86, 0.2);
+	border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 }
 
 /***** Jtron *****/
 
 .jtron {
-	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
 	color: #fff;
 }
 
+.jtron__header {
+	color: #1f3756;
+}
+
 .jtron q {
-	color: #ccc;
+	color: rgba(31, 55, 86, 0.8);
 }
 
 .jtron__header-style {
