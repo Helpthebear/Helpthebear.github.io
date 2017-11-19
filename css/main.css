@@ -1,7 +1,7 @@
 /*
-========================================
+================================================================================
 Base
-========================================
+================================================================================
 */
 
 *,
@@ -30,8 +30,8 @@ a:visited {
 }
 
 p {
-	max-width: 75ch;
-	margin: 0 auto;
+	max-width: 70ch;
+	margin: 12px auto;
 }
 
 img {
@@ -93,11 +93,25 @@ Layout
 
 
 
+
+
+
 /*
-========================================
+================================================================================
 Modules
-========================================
+================================================================================
 */
+
+/********************
+Font
+********************/
+
+@media screen and (min-width: 768px) {
+	body {
+		font-size: 1.2em;
+	}
+}
+
 
 /********************
 Nav
@@ -142,7 +156,7 @@ Jtron
 }
 
 .jtron__header {
-	padding-bottom: 24px;
+	/*padding-bottom: 24px;*/
 }
 
 
@@ -169,16 +183,38 @@ Jtron
 Skills
 ********************/
 
+.skills__header,
+.skills__header-two {
+	font-weight: 700;
+	margin-top: 48px;
+	margin-bottom: 12px;
+}
+
+.skills__header-two {
+	text-align: center;
+}
+
 .skills__list {
 	flex-flow: row wrap;
 	justify-content: space-around;
 	text-align: center;
 }
 
-.svg--skills {
-	width: 70px;
-	height: auto;	
+.skills__li {
+	margin: 0 12px 48px;
 }
+
+.skills__card {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+}
+
+.svg--skills {
+	max-width: 100%;
+	padding: 20px;
+}
+
 
 .skills-card {
 	padding: 9px;
@@ -189,18 +225,46 @@ Skills
 	.skills__head p {
 		text-align: center;
 	}
+
+	.skills__card {
+		width: 120px;
+		height: 120px;
+	}
+
+	.svg--skills {
+		padding: 32px;
+	}
 }
+
+
 
 /********************
 Contact
 ********************/
 
 .contact {
-	width: 50%;
+	margin: 48px auto;
+}
+
+.contact__head p {
+	margin-left: 0;
+}
+
+.contact__header {
+	font-weight: 700;
 }
 
 .contact__list {
 	flex-direction: column;
+}
+
+.contact__list li {
+	margin-top: 12px;
+	text-decoration: underline;
+}
+
+.contact__list li:nth-of-type(1) {
+	text-decoration: none;
 }
 
 .svg--contact {
@@ -213,6 +277,10 @@ Contact
 
 
 @media screen and (min-width: 768px) {
+	.contact {
+		width: 40%;
+	}
+
 	.contact__head {
 		display: flex;
 		flex-flow: column;
@@ -233,10 +301,13 @@ Footer
 
 
 
+
+
+
 /*
-========================================
+================================================================================
 Colors
-========================================
+================================================================================
 */
 
 /********************
@@ -249,7 +320,7 @@ body {
 }
 
 a:hover {
-	color: #64172D;
+	color: #4FA57E;
 }
 
 
@@ -258,19 +329,6 @@ a:hover {
 Header
 ********************/
 
-.header-bg {
-	background: #5081A5;
-	background-image: radial-gradient(at bottom left, #4FA57E, #5081A5);
-}
-
-@media screen and (min-width: 768px) {
-	.header-card {
-		width: 95%;
-		background: rgba(0, 0, 0, 0.1);
-		box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
-	}
-}
-
 /***** Nav *****/
 
 .main-nav {
@@ -278,7 +336,7 @@ Header
 }
 
 .main-nav__li {
-	border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+	border-bottom: 2px solid rgba(31, 55, 86, 0.2);
 }
 
 /***** Jtron *****/
@@ -300,11 +358,20 @@ Header
 	border-radius: 3px;
 }
 
-/*@media screen and (min-width: 768px) {
-	.jtron__header {
-		text-shadow: 1px 1px 1px rgba(31, 55, 86, 1); 			Activate at breakpoint    
+.header-bg {
+	background: #5081A5;
+	background-image: radial-gradient(at bottom left, #4FA57E, #5081A5);
+}
+
+
+
+@media screen and (min-width: 768px) {
+	.header-card {
+		width: 95%;
+		background: rgba(0, 0, 0, 0.1);
+		box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 	}
-}*/
+}
 
 
 
@@ -312,20 +379,11 @@ Header
 Skills
 ********************/
 
-.skills__li {
-	color: #606060;
+.skills__card {
+	background-image: radial-gradient(at top right, #4FA57E, #5081A5);
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
 }
 
-.skills-card {
-	background: #e8e8e8;
-	background-image: linear-gradient(#EAEAEA, #DBDBDB);
-	/*box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.4);*/
-	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
-}
-
-.skills__header {
-	color: 
-}
 
 
 /********************
@@ -339,7 +397,6 @@ Footer
 
 .main-footer {
 	background: #DBDBDB;
-	background-image: linear-gradient(#E2E2E2, #DBDBDB);
 }
 
 
