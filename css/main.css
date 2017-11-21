@@ -19,7 +19,7 @@ body {
 	min-height: 100vh;
 }
 
-h1 {font-size: 1.8em; }
+h1 {font-size: 1.7em; }
 h2 {font-size: 1.6em; }
 h3 {font-size: 1.4em; }
 
@@ -378,6 +378,7 @@ Header
 /********************
 Skills
 ********************/
+
 
 .skills__card {
 	background-image: radial-gradient(at top right, #4FA57E, #5081A5);
