@@ -13,15 +13,18 @@ Base
 }
 
 body {
-	font: 100%/1.5 "Lora", serif;
+	/*font: 100%/1.5 "Lora", serif;*/
+	font: 100%/1.5 'Open Sans', sans-serif;
 	display: flex;
 	flex-flow: row wrap;
 	min-height: 100vh;
 }
 
-h1 {font-size: 1.7em; }
-h2 {font-size: 1.6em; }
-h3 {font-size: 1.4em; }
+
+
+h1 {font-size: 2em; }
+h2 {font-size: 1.4em; }
+h3 {font-size: 1.2em; }
 
 a,
 a:visited {
@@ -106,11 +109,68 @@ Modules
 Font
 ********************/
 
+.main-nav__brand {
+	font-size: 1.4em;
+}
+
+.jtron__header,
+.jtron__header-p,
+.main-nav__li,
+.skills__header,
+.contact__header {
+	text-transform: uppercase;
+}
+	
+.jtron,
+.skills__head p,
+.skills__list,
+.contact__head p,
+.main-footer {
+	font-weight: 300;
+}
+
+.jtron__header-p {
+	font-weight: 400;
+}
+
+.jtron__header,
+.skills__header, 
+.contact__header {
+	font-weight: 700;
+}
+
+
+
+@media screen and (max-width: 374px) {
+	.jtron__header {
+		font-size: 1.6em;
+	}
+
+	.jtron__header-p {
+		font-size: 0.8em;
+	}
+}
+
 @media screen and (min-width: 768px) {
-	body {
+	.main-nav__brand {
+   		font-size: 1.8em;
+	}
+
+	.jtron__header {
+		font-size: 3.5em;
+	}
+
+	.jtron p:nth-of-type(2) {
+		font-size: 1.4em;
+	}
+
+	.skills,
+	.contact,
+	.main-footer {
 		font-size: 1.2em;
 	}
 }
+
 
 
 /********************
@@ -118,7 +178,19 @@ Nav
 ********************/
 
 .main-nav__list {
-	align-items: baseline;
+	align-items: center;
+}
+
+.main-nav__li {
+	width: 90px;
+	height: 30px;
+	text-align: center;
+	border: 1px solid #1f3756;
+	border-radius: 5%;
+}
+
+.main-nav__li a {
+	vertical-align: middle;
 }
 
 .main-nav__list li:nth-of-type(2) {
@@ -128,20 +200,9 @@ Nav
 
 .main-nav__brand {
 	margin-right: auto;
-	font-size: 1.4em;
+	vertical-align: bottom;
 }
 
-
-
-@media screen and (min-width: 768px) {
-	.main-nav__brand {
-   		font-size: 1.8em;
-	}
-
-	.main-nav__li {
-		font-size: 1.2em;
-	}
-}
 
 
 /********************
@@ -155,6 +216,10 @@ Jtron
 	justify-content: center;
 }
 
+.jtron__header-p {
+	margin-left: 0;
+}
+
 .jtron__header {
 	/*padding-bottom: 24px;*/
 }
@@ -165,8 +230,8 @@ Jtron
 		text-align: center; 
 	}
 
-	.jtron__header {
-		font-size: 2.5em;
+	.jtron__header-p {
+		margin-left: auto;
 	}
 
 	.header-bg {
@@ -185,7 +250,6 @@ Skills
 
 .skills__header,
 .skills__header-two {
-	font-weight: 700;
 	margin-top: 48px;
 	margin-bottom: 12px;
 }
@@ -277,8 +341,8 @@ Contact
 
 
 @media screen and (min-width: 768px) {
-	.contact {
-		width: 40%;
+	.contact p {
+		max-width: 50%;
 	}
 
 	.contact__head {
@@ -315,12 +379,8 @@ General
 ********************/
 
 body {
-	background: #f2f2f2;
+	background: #EAEAEA;
 	color: #333;
-}
-
-a:hover {
-	color: #4FA57E;
 }
 
 
@@ -335,8 +395,9 @@ Header
 	color: #1f3756;
 }
 
-.main-nav__li {
-	border-bottom: 2px solid rgba(31, 55, 86, 0.2);
+.main-nav__li:hover {
+	background-color: #1f3756;
+	color: #5086A0;
 }
 
 /***** Jtron *****/
@@ -345,7 +406,8 @@ Header
 	color: #fff;
 }
 
-.jtron__header {
+.jtron__header,
+.jtron__header-p {
 	color: #1f3756;
 }
 
@@ -367,9 +429,8 @@ Header
 
 @media screen and (min-width: 768px) {
 	.header-card {
-		width: 95%;
-		background: rgba(0, 0, 0, 0.1);
-		box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+		width: 95%; 
+		box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.4);
 	}
 }
 
@@ -382,7 +443,7 @@ Skills
 
 .skills__card {
 	background-image: radial-gradient(at top right, #4FA57E, #5081A5);
-	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -390,6 +451,10 @@ Skills
 /********************
 Contact
 ********************/
+
+.contact__list a:hover {
+	color: #5081A5;
+}
 
 
 /********************
