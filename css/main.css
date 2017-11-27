@@ -187,6 +187,7 @@ Nav
 	text-align: center;
 	border: 1px solid #1f3756;
 	border-radius: 5%;
+	padding: 4px;
 }
 
 .main-nav__li a {
