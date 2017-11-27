@@ -185,7 +185,7 @@ Nav
 	width: 96px;
 	height: 30px;
 	text-align: center;
-	border: 1px solid #1f3756;
+	/*border: 1px solid #1f3756;*/
 	border-radius: 5%;
 }
 
@@ -203,6 +203,11 @@ Nav
 	vertical-align: bottom;
 }
 
+@media screen and (min-width: 768px) {
+	.main-nav__li {
+		border: 1px solid #1f3756;
+	}
+}
 
 
 /********************
