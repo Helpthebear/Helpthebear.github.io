@@ -179,7 +179,6 @@ Nav
 
 .main-nav__list {
 	align-items: center;
-	flex-flow: row wrap;
 }
 
 .main-nav__li {
@@ -202,7 +201,6 @@ Nav
 .main-nav__brand {
 	margin-right: auto;
 	vertical-align: bottom;
-	width: 100%;
 }
 
 
