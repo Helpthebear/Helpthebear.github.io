@@ -202,7 +202,7 @@ Nav
 .main-nav__brand {
 	margin-right: auto;
 	vertical-align: bottom;
-	flex-basis: 100%;
+	width: 100%;
 }
 
 
