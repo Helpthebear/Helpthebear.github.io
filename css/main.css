@@ -187,11 +187,12 @@ Nav
 	text-align: center;
 	border: 1px solid #1f3756;
 	border-radius: 5%;
-	padding: 4px;
 }
 
 .main-nav__li a {
 	vertical-align: middle;
+	padding-left: 4px;
+	padding-right: 4px;
 }
 
 .main-nav__list li:nth-of-type(2) {
