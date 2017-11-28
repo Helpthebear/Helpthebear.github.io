@@ -133,6 +133,7 @@ Font
 	font-weight: 400;
 }
 
+.main-nav__brand,
 .jtron__header,
 .skills__header, 
 .contact__header {
@@ -175,11 +176,7 @@ Font
 
 /********************
 Nav
-********************/
-
-.main-nav__list {
-	align-items: center;
-}
+********************/	
 
 .main-nav__li {
 	width: 96px;
@@ -201,6 +198,21 @@ Nav
 .main-nav__brand {
 	margin-right: auto;
 	vertical-align: bottom;
+}
+
+@media screen and (max-width: 767px) {
+	.main-nav__list {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.main-nav__list li:nth-of-type(2) {
+		margin: auto;
+	}
+
+	.main-nav__brand {
+		margin-bottom: 12px;
+	}
 }
 
 @media screen and (min-width: 768px) {
@@ -229,6 +241,11 @@ Jtron
 	/*padding-bottom: 24px;*/
 }
 
+@media screen and (max-width: 768px) {
+	.jtron {
+		height: 300px;
+	}
+}
 
 @media screen and (min-width: 768px) {
 	.jtron {
@@ -400,9 +417,21 @@ Header
 	color: #1f3756;
 }
 
-.main-nav__li:hover {
-	background-color: #1f3756;
-	color: #5086A0;
+
+
+@media screen and (min-width: 768px) {
+	.main-nav__li:hover {
+		background-color: #1f3756;
+		color: #5086A0;
+	}
+}
+
+
+
+@media screen and (max-width: 767px) {
+	.main-nav__li {
+		border-bottom: 2px solid rgba(31, 55, 86, 0.2);
+	}
 }
 
 /***** Jtron *****/
