@@ -212,6 +212,7 @@ Nav
 
 	.main-nav__brand {
 		margin-bottom: 12px;
+		background: #fff;
 	}
 }
 
