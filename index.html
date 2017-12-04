@@ -9,41 +9,55 @@
 		<title>Kevin Coleman | Front-End Developer &amp; Designer</title>
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link rel="stylesheet" href="css/meyer-reset.css">
+		<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
 		<link rel="stylesheet" href="css/main.css">
 	</head>
 	
 	<body>
 
-		<div class="row">
 
+	    
+			<header class="hero-bg">
 
-		
-			<header class="header-bg">
-
-				<div class="header-card  h-container">
+				<div class="hero-card">
 
 					<nav class="main-nav">
+						
+						<div class="wrapper">
 
-				    	<ul class="main-nav__list">
+							<a class="main-nav__brand  text-thick  left">Kevin Coleman</a>
+							
+							<a href="#" data-activates="mob-nav" class="button-collapse  right"><i class="material-icons">menu</i></a>
 
-				    		<li class="main-nav__brand">Kevin Coleman</li>
+					    	<ul class="main-nav__list  right  hide-on-med-and-down">
 
-				    		<li class="main-nav__li"><a href="index.html#skills-section">skills</a></li>
+					    		<li class="main-nav__li  text-caps"><a href="index.html#skills-section">skills</a></li>
 
-				    		<li class="main-nav__li"><a href="index.html#contact-section">contact</a></li>
+					    		<li class="main-nav__li  text-caps"><a href="index.html#contact-section">contact</a></li>
 
-				    	</ul>
+					    	</ul>
+
+					    	<ul class="side-nav" id="mob-nav">
+
+					    		<li class="main-nav__li  text-caps"><a href="index.html#skills-section">skills</a></li>
+
+					    		<li class="main-nav__li  text-caps"><a href="index.html#contact-section">contact</a></li>
+
+					    	</ul>
+
+				    	</div>
 
 					</nav>
 
 
 
-					<div class="jtron">
+					<div class="hero  text-thin  wrapper">
 
-						<h1 class="jtron__header  text-style"><span class="jtron__header-style">Web Developer</span></h1>
+						<h1 class="text-caps  hero__header  text-thick  text-style"><span class="hero__header-style">Web Developer</span></h1>
 
-						<p class="jtron__header-p">UI Design | Front-End | Back-End</p>
+						<p class="text-caps  hero__header-p">UI Design | Front-End | Back-End</p>
 
 						<p> I like to build websites and learn new technologies that allow me to enhance both past and future projects.</p>
 						
@@ -61,63 +75,59 @@
 
 				<section class="skills">
 															
-					<div class="container">  
+					<div class="wrapper">  
 
 						<div class="skills__head">
 
-							<h2  id="skills-section" class="skills__header">Abilities</h2>
+							<h2  id="skills-section" class="skills__header  text-thick  text-caps">Abilities</h2>
 
 							<p>At the core of my skills lies a strong foundation in the heart of Front-End Development: HTML, CSS, &amp; JavaScript. Understanding the importance of keeping project files clear and easily maintainable, I strive to write code that is modular and reusable. I'm also familiar with responsive design concepts and use a mobile first approach when writing code to ensure a pleasant experience for users.</p>
 
 						</div>
 
 
-						<h3 class="skills__header-two">My Tool Box</h3>
-
-						<div class="skills-card">
+						<h3 class="skills__header  text-thick text-caps">Tool Box</h3>
 									
-							<ul class="skills__list">
+						<ul class="skills__list  text-thin">
 
-								<li class="skills__li">
-									<figure class="skills__card"><img class="svg--skills" src="imgs/html5.svg">
-									<figcaption>HTML5</figcaption>
-								</figure></li>
+							<li class="skills__li">
+								<figure class="skills__card"><img class="svg--skills" src="imgs/html5.svg">
+								<figcaption>HTML5</figcaption>
+							</figure></li>
 
-								<li class="skills__li"><figure class="skills__card"><img class="svg--skills" src="imgs/javascript.svg">
-									<figcaption>JavaScript</figcaption>
-								</figure></li>
+							<li class="skills__li"><figure class="skills__card"><img class="svg--skills" src="imgs/javascript.svg">
+								<figcaption>JavaScript</figcaption>
+							</figure></li>
 
-								<li class="skills__li"><figure class="skills__card"><img class="svg--skills" src="imgs/css3.svg">
-									<figcaption>CSS3</figcaption>
-								</figure></li>
+							<li class="skills__li"><figure class="skills__card"><img class="svg--skills" src="imgs/css3.svg">
+								<figcaption>CSS3</figcaption>
+							</figure></li>
 
-								<li class="skills__li"><figure class="skills__card"><img class="svg--skills" src="imgs/bootstrap.svg">
-									<figcaption>Bootstrap</figcaption>
-								</figure></li>
+							<li class="skills__li"><figure class="skills__card"><img class="svg--skills" src="imgs/bootstrap.svg">
+								<figcaption>Bootstrap</figcaption>
+							</figure></li>
 
-								<li class="skills__li"><figure class="skills__card"><img class="svg--skills" src="imgs/jquery.svg">
-									<figcaption>jQuery</figcaption>
-								</figure></li>
+							<li class="skills__li"><figure class="skills__card"><img class="svg--skills" src="imgs/jquery.svg">
+								<figcaption>jQuery</figcaption>
+							</figure></li>
+<!-- 
+							<li class="skills__li"><figure class="skills__card"><img class="svg--skills" src="imgs/sass.svg">
+								<figcaption>Sass</figcaption>
+							</figure></li> -->
 
-								<li class="skills__li"><figure class="skills__card"><img class="svg--skills" src="imgs/sass.svg">
-									<figcaption>Sass</figcaption>
-								</figure></li>
+							<li class="skills__li"><figure class="skills__card"><img class="svg--skills" src="imgs/nodejs.svg">
+								<figcaption>Node.js</figcaption>
+							</figure></li>
 
-								<li class="skills__li"><figure class="skills__card"><img class="svg--skills" src="imgs/nodejs.svg">
-									<figcaption>Node.js</figcaption>
-								</figure></li>
+						<!-- 	<li class="skills__li"><figure class="skills__card"><img class="svg--skills" src="imgs/mongodb.svg">
+								<figcaption>MongoDB</figcaption>
+							</figure></li> -->
 
-								<li class="skills__li"><figure class="skills__card"><img class="svg--skills" src="imgs/mongodb.svg">
-									<figcaption>MongoDB</figcaption>
-								</figure></li>
+							<li class="skills__li"><figure class="skills__card"><img class="svg--skills" src="imgs/git.svg">
+								<figcaption>Git</figcaption>
+							</figure></li>
 
-								<li class="skills__li"><figure class="skills__card"><img class="svg--skills" src="imgs/git.svg">
-									<figcaption>Git</figcaption>
-								</figure></li>
-
-							</ul>
-
-						</div>
+						</ul>
 
 					</div>
 
@@ -129,11 +139,11 @@
 
 			<aside id="contact-section">
 																	
-				<div class="container  contact">
+				<div class="wrapper  contact">
 
 						<div class="contact__head">
 																			
-							<h3 class="contact__header">Contact</h3>
+							<h3 class="text-thick  text-caps">Contact</h3>
 
 							<p>Feel free to reach out or take a look at whatever im working on around the web.</p>
 
@@ -157,11 +167,11 @@
 
 
 
-			<footer class="main-footer">
+			<footer class="main-footer  text-thin">
 
-				<div class="container">
+				<div class="wrapper">
 
-					<span>&copy; 2017 Kevin Coleman.</span>
+					<p>&copy; 2017 Kevin Coleman.</p>
 
 				</div>
 
@@ -169,6 +179,9 @@
 
 		</div>
 
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
 	</body>
 
 </html>
